@@ -1,0 +1,30 @@
+{
+  "name": "zero-transformicon",
+  "version": "0.1.0",
+  "authors": [
+    "Jason JC Lee <zerodevx@gmail.com>"
+  ],
+  "description": "Animated icon buttons! A Polymer port of Transformicons.",
+  "keywords": [
+    "polymer",
+    "web-components",
+    "transformicons",
+    "animated",
+    "icon",
+    "button",
+    "control"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zerodevx/zero-md.git"
+  },
+  "license": "MIT",
+  "homepage": "https://zerodevx.github.io/zero-transformicon",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  }
+}

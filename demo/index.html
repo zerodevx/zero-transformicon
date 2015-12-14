@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>zero-transformicon demo</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <!--<script>window.Polymer=window.Polymer||{};window.Polymer.dom="shadow";</script>-->
+  <link rel="import" href="../../polymer/polymer.html">
+  <link rel="stylesheet" href="iron-flex-layout.css">
+  <link rel="import" href="../zero-transformicon.html">
+</head>
+
+<body unresolved>
+  <style is="custom-style">
+    body, html {
+      font-family: sans-serif;
+      text-align: center;
+      color: #424242;
+      background-color: #fff;
+    }
+    .container {
+      box-sizing: border-box;
+      margin: 4px;
+      padding: 8px;
+      height: 80px;
+      width: 100px;
+      background-color: #fff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                  0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+    .desc {
+      font-size: 12px;
+      font-weight: 300;
+    }
+    zero-transformicon {
+      border: 1px solid rgba(0,0,0,0.1);
+    }
+    #test {
+      --zero-transformicon-color: blue;
+    }
+  </style>
+
+  <h2>zero-transformicon demo</h2>
+
+  <h4>menu</h4>
+  <div class="layout horizontal center-justified wrap">
+    <div class="container layout vertical center">
+      <zero-transformicon id="test" icon="menu-xbutterfly" active></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">menu-xbutterfly</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="menu-minus"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">menu-minus</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="menu-xcross"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">menu-xcross</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="menu-arrowup"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">menu-arrowup</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="menu-arrow360left"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">menu-arrow360left</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="menu-arrowleft"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">menu-arrowleft</div>
+    </div>
+  </div>
+
+  <h4>grid</h4>
+  <div class="layout horizontal center-justified wrap">
+    <div class="container layout vertical center">
+      <zero-transformicon icon="grid-collapse"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">grid-collapse</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="grid-rearrange"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">grid-rearrange</div>
+    </div>
+  </div>
+
+  <h4>add/remove</h4>
+  <div class="layout horizontal center-justified wrap">
+    <div class="container layout vertical center">
+      <zero-transformicon icon="plus-check"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">plus-check</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="plus-minus"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">plus-minus</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="remove-check"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">remove-check</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="remove-chevronleft"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">remove-chevronleft</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="remove-chevronright"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">remove-chevronright</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="remove-chevrondown"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">remove-chevrondown</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="remove-chevronup"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">remove-chevronup</div>
+    </div>
+  </div>
+
+  <h4>miscellaneous</h4>
+  <div class="layout horizontal center-justified wrap">
+    <div class="container layout vertical center">
+      <zero-transformicon icon="mail-envelope"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">mail-envelope</div>
+    </div>
+    <div class="container layout vertical center">
+      <zero-transformicon icon="search-xcross"></zero-transformicon>
+      <div class="flex"></div>
+      <div class="desc">search-xcross</div>
+    </div>
+  </div>
+
+  <script>
+    var apps = document.querySelectorAll("zero-transformicon");
+    var app = apps[0];
+
+    document.querySelector("#test").addEventListener("click", function (e) {
+      console.log("clicked");
+    });
+  </script>
+
+</body>
+</html>
