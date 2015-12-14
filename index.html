@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="Animated icon buttons. A Polymer port of Transformicons. All of Transformicon goodness encapsulated in one incredibly easy-to-use web component.">
+  <title>&lt;zero-transformicon&gt; | Animated icon buttons</title>
+
+  <!-- The SeriouslyBoring stuff -->
+  <link rel="canonical" href="https://zerodevx.github.io/zero-transformicon">
+  <meta name="theme-color" content="#304FFE">
+  <link rel="manifest" href="manifest.json">
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="zero-transformicon">
+  <link rel="icon" sizes="192x192" href="images/zdx_192x192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="zero-transformicon">
+  <link rel="apple-touch-icon" href="images/zdx_144x144.png">
+  <meta name="msapplication-TileImage" content="images/zdx_144x144.png">
+
+  <script src="https://cdn.rawgit.com/webcomponents/webcomponentsjs/v0.7.19/webcomponents-lite.min.js"></script>
+  <!--<script>window.Polymer=window.Polymer||{};window.Polymer.dom="shadow";</script>-->
+  <link rel="import" href="https://cdn.rawgit.com/zerodevx/zero-transformicon/v0.1.0/build/zero-transformicon.build.html">
+  <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic'>
+  <link rel="stylesheet" href="iron-flex-layout.css">
+</head>
+
+<body unresolved>
+  <style>
+    html, body {
+      font-family: "Open Sans", sans-serif;
+      margin: 0;
+      height: 100vh;
+      color: #424242;
+      background-color: #fff;
+      line-height: 1.5;
+    }
+    a { color: #1EAEDB; }
+    a:hover { color: #0FA0CE; }
+    h1 {
+      font-size: 32px;
+      font-weight: 300;
+      text-align: center;
+    }
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0px 6px 4px 6px;
+    }
+    h6 {
+      font-size: 14px;
+      font-weight: 300;
+      text-align: center;
+      margin: 0;
+      padding: 8px 0;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .container {
+      max-width: 790px;
+      margin: 0 auto;
+      padding: 16px;
+    }
+    .head {
+      height: 75vh;
+      min-height: 480px;
+      background-color: #1E1C3D;
+      color: #fff;
+    }
+    .head a {
+      text-decoration: none;
+      width: 86px;
+      color: #fff;
+      font-size: 14px;
+      padding: 16px 12px;
+      margin: 48px 0 16px 0;
+      border: 2px solid #fff;
+      text-align: center;
+      border-radius: 2px;
+    }
+    .head a:hover {
+      font-weight: 600;
+    }
+    .head h4 {
+      text-align: center;
+    }
+    .divider {
+      height: 1px;
+      background-color: rgba(0,0,0,0.15);
+      margin-bottom: 16px;
+    }
+    .icon {
+      height: 120px;
+      width: 100px;
+    }
+    .icon-wrap {
+      margin-top: 8px;
+      padding: 2px;
+      background-color: #fff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                  0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                  0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    }
+    .b {
+      font-weight: 600;
+    }
+    .i {
+      font-weight: 300;
+      font-style: italic;
+    }
+    code {
+      font-family: "Source Sans Pro", monospace;
+      font-size: 17px;
+      font-weight: 400;
+      background: #F1F1F1;
+      border: 1px solid #E1E1E1;
+      border-radius: 4px;
+    }
+    .footer {
+      width: 100%;
+      height: 60px;
+      background-color: #1E1C3D;
+      color: #fff;
+    }
+    .footer-left {
+      font-weight: 800;
+      font-size: 14px;
+      padding: 12px;
+    }
+    .footer-right {
+      font-size: 14px;
+      padding: 12px;
+    }
+  </style>
+
+  <div class="head layout vertical center-center">
+    <img src="transformers.png" height="200" width="320">
+    <h1>&lt;zero-transformicon&gt;</h1>
+    <h4>Animated icon buttons! A Polymer port of Transformicons.</h4>
+    <a href="https://github.com/zerodevx/zero-transformicon" class="self-center">GITHUB</a>
+  </div>
+
+  <div class="container">
+
+    <h1>Animated Icons</h1>
+
+    <h4>Menu</h4>
+    <div class="divider"></div>
+    <div class="layout horizontal center-justified wrap">
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="menu-xbutterfly"></zero-transformicon></div>
+        <h6>menu-xbutterfly</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="menu-minus"></zero-transformicon></div>
+        <h6>menu-minus</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="menu-xcross"></zero-transformicon></div>
+        <h6>menu-xcross</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="menu-arrowup"></zero-transformicon></div>
+        <h6>menu-arrowup</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="menu-arrow360left"></zero-transformicon></div>
+        <h6>menu-arrow360left</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="menu-arrowleft"></zero-transformicon></div>
+        <h6>menu-arrowleft</h6>
+      </div>
+    </div>
+
+    <h4>Grid</h4>
+    <div class="divider"></div>
+    <div class="layout horizontal center-justified wrap">
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="grid-collapse"></zero-transformicon></div>
+        <h6>grid-collapse</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="grid-rearrange"></zero-transformicon></div>
+        <h6>grid-rearrange</h6>
+      </div>
+    </div>
+
+    <h4>Add &amp; Remove</h4>
+    <div class="divider"></div>
+    <div class="layout horizontal center-justified wrap">
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="plus-check"></zero-transformicon></div>
+        <h6>plus-check</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="plus-minus"></zero-transformicon></div>
+        <h6>plus-minus</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="remove-check"></zero-transformicon></div>
+        <h6>remove-check</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="remove-chevronleft"></zero-transformicon></div>
+        <h6>remove-chevronleft</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="remove-chevronright"></zero-transformicon></div>
+        <h6>remove-chevronright</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="remove-chevrondown"></zero-transformicon></div>
+        <h6>remove-chevrondown</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="remove-chevronup"></zero-transformicon></div>
+        <h6>remove-chevronup</h6>
+      </div>
+    </div>
+
+    <h4>Others</h4>
+    <div class="divider"></div>
+    <div class="layout horizontal center-justified wrap">
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="mail-envelope"></zero-transformicon></div>
+        <h6>mail-envelope</h6>
+      </div>
+      <div class="icon layout vertical center">
+        <div class="icon-wrap"><zero-transformicon icon="search-xcross"></zero-transformicon></div>
+        <h6>search-xcross</h6>
+      </div>
+    </div>
+
+    <h1>Usage</h1>
+    <h4>1. Load dependencies.</h4>
+    <div class="divider"></div>
+    <p><code>&lt;zero-transformicon&gt;</code> is a custom Polymer element, so load <code>webcomponents-lite.js</code> polyfill and the <code>zero-transformicon.build.html</code> bundle (which includes the Polymer framework) and you're good to go.</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;head&gt;</span>
+  ...
+  <span style="color: #888888">&lt;!-- Import webcomponents-lite.js polyfill --&gt;</span>
+  <span style="color: #007700">&lt;script </span><span style="color: #0000CC">src=</span><span style="background-color: #fff0f0">&quot;https://cdn.rawgit.com/webcomponents/webcomponentsjs/v0.7.19/webcomponents-lite.min.js&quot;</span><span style="color: #007700">&gt;&lt;/script&gt;</span>
+
+  <span style="color: #888888">&lt;!-- Import zero-transformicon build bundle --&gt;</span>
+  <span style="color: #007700">&lt;link</span> <span style="color: #0000CC">rel=</span><span style="background-color: #fff0f0">&quot;import&quot;</span> <span style="color: #0000CC">href=</span><span style="background-color: #fff0f0">&quot;https://cdn.rawgit.com/zerodevx/zero-transformicon/v0.1.0/build/zero-transformicon.build.html&quot;</span><span style="color: #007700">&gt;</span>
+
+<span style="color: #007700">&lt;/head&gt;</span>
+</pre></div>
+
+    <br>
+    <h4>2. Use anywhere.</h4>
+    <div class="divider"></div>
+    <p>Simply apply <code>&lt;zero-transformicon icon="..."&gt;&lt;/zero-transformicon&gt;</code> tags declaratively anywhere in your HTML body.</p>
+
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007700">&lt;body&gt;</span>
+
+  <span style="color: #888888">&lt;!-- Most basic usage --&gt;</span>
+  <span style="color: #007700">&lt;zero-transformicon</span> <span style="color: #0000CC">icon=</span><span style="background-color: #fff0f0">&quot;menu-xcross&quot;</span><span style="color: #007700">&gt;&lt;/zero-transformicon&gt;</span>
+
+  <span style="color: #888888">&lt;!-- In red color --&gt;</span>
+  <span style="color: #007700">&lt;zero-transformicon</span> <span style="color: #0000CC">icon=</span><span style="background-color: #fff0f0">&quot;grid-collapse&quot;</span> <span style="color: #0000CC">color=</span><span style="background-color: #fff0f0">&quot;red&quot;</span><span style="color: #007700">&gt;&lt;/zero-transformicon&gt;</span>
+
+  <span style="color: #888888">&lt;!-- Default to &#39;open&#39; state --&gt;</span>
+  <span style="color: #007700">&lt;zero-transformicon</span> <span style="color: #0000CC">icon=</span><span style="background-color: #fff0f0">&quot;plus-minus&quot;</span> <span style="color: #0000CC">color=</span><span style="background-color: #fff0f0">&quot;#222&quot;</span> <span style="color: #0000CC">active</span><span style="color: #007700">&gt;&lt;/zero-transformicon&gt;</span>
+  ...
+
+<span style="color: #007700">&lt;/body&gt;</span>
+</pre></div>
+
+    <br>
+    <h1>Credits</h1>
+    <p>Big thank you to the kind folks at <a href="https://github.com/grayghostvisuals/transformicons">Grey Ghost Visuals</a>, <a href="http://bennettfeely.com/">Bennett Feely</a> and <a href="http://sarasoueidan.com/">Sara Soueidan</a> for creating these awesome UI pieces. This is simply their work wrapped in some Polymer magic.</p>
+    <p>Site design copied from the <a href="http://www.transformicons.com">Transformicons</a> website, poorly. Imitation is the sincerest form of flattery, they say.</p>
+    <br><br>
+  </div>
+  <div class="footer layout horizontal center">
+    <div class="footer-left">zero-dev-x</div>
+    <div class="flex"></div>
+    <div class="footer-right">Jason Lee | zerodevx@gmail.com</div>
+  </div>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-66946548-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</body>
+</html>
