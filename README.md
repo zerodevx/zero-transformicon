@@ -84,7 +84,7 @@ Check out the demo site: https://zerodevx.github.com/zero-transformicon
 
 **Install through Bower**
 
-    bower install --save zerodevx/zero-md#^0.2.0
+    bower install --save zerodevx/zero-transformicon#^0.1.0
 
 Alternatively, download the project as a ZIP file and unpack into your
 components directory. Note that `<zero-transformicon>` depends on:
