@@ -18,6 +18,7 @@
     "type": "git",
     "url": "git://github.com/zerodevx/zero-md.git"
   },
+  "main": "zero-transformicon.html",
   "license": "MIT",
   "homepage": "https://zerodevx.github.io/zero-transformicon",
   "ignore": [
